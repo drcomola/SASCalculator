@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAS Palatal Expander Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>SAS Palatal Expander Calculator</h1>
+    <img src="sfere.png" alt="Sfere" class="image">
+
+    <div class="input-group">
+      <label for="arcata-superiore">Arcata superiore (Distanza cuspidi):</label>
+      <input type="number" id="arcata-superiore" placeholder="Inserisci un valore">
+    </div>
+
+    <div class="input-group">
+      <label for="arcata-inferiore">Arcata inferiore (Distanza cuspidi):</label>
+      <input type="number" id="arcata-inferiore" placeholder="Inserisci un valore">
+    </div>
+
+    <p>Valutazione della decompensazione inferiore e compensazione superiore</p>
+
+    <div class="button-group">
+      <button id="calcolatore-semplicato">Calcolatore Semplificato</button>
+      <button id="calcolatore-avanzato">Calcolatore Avanzato</button>
+    </div>
+
+    <button id="calcola-valore">Calcola Valore dell'espansione</button>
+
+    <p id="risultato"></p>
+
+    <div class="ipercorrezione-group">
+      <p>Ipercorrezione di terza classe:</p>
+      <button class="ipercorrezione" data-valore="2">Lieve</button>
+      <button class="ipercorrezione" data-valore="3">Moderata</button>
+      <button class="ipercorrezione" data-valore="4">Severa</button>
+    </div>
+
+    <p id="risultato-iper"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
